@@ -11,6 +11,7 @@ import {
 import { Nosotros } from './components/Nosotros';
 import { Contacto } from './Contacto';
 import { Principal } from './Principal';
+import { Usuarios } from './components/Usuarios';
 
 
 function App() {
@@ -46,9 +47,15 @@ function App() {
             <Contacto />
           </Route>
 
+          <Route path="/nosotros/:id">
+            <Usuarios />
+          </Route>
+
           <Route path="/nosotros">
             <Nosotros />
           </Route>
+
+
 
 
         </Switch>
